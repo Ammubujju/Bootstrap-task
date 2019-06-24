@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MY WEBSITE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/mycode.css">
+</head>
+<body style="height:1070px">
+
+    <!--/.NAV-->
+
+  <nav class="navbar navbar-fixed navbar-default"> 
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand">AXIS BANK</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME</a></li> <li>|</li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MESSAGE<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">INBOX</a></li>
+              <li><a href="#">DRAFTS</a></li>
+              <li><a href="#">TRASH</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--/.carosuel-->
+    
+<div>
+  
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/img1.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/img2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/img3.jpg" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides,1500); // Change image every 2 seconds
+    }
+    </script>
+    
+
+  
+  
+    <!--/.jumbotron-->
+    <div class="container">
+      <div class="jumbotron">
+        <h2>AXIS BANK</h2> 
+        <p><div class="container">
+          <p>--Work until your BANK Account looks like a phone number</p> 
+        </div></p> 
+      </div>
+     </div>
+    </div>
+
+        <!-----/.tabbed pan-------->
+    
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">OFFERS</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">INSURANCES</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">LOANS</a></li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active container-fluid" id="home"><p></p>
+                <div class="row flex-row row-default">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>ABOUT OUR BANK</h3>
+                                    <p><b>B</b>ANK SMARTAxis Pay,Axis Mobile,Internet Banking</p>
+                                    <p><b>A</b>xis Bank is the third largest private sector bank in India. The Bank offers the entire spectrum of financial services to customer segments covering Large and Mid-Corporates, MSME, Agriculture and Retail Businesses.</p>
+                                  </div>
+                                </div>
+                            </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2>Customer services by AXIS</h2>
+                                <ul>
+                                    <li>Transfer funds through NEFT or RTGS</li>
+                                    <li>Start Fixed Deposits</li>
+                                    <li>Order Demand Drafts</li>
+                                    <li>Request cheque book & statements</li>
+                                   
+                                    <li>Pay premium for your policies</li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+
+    
+              
+            <p></p>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                            <p class="text-justify"><b>A</b>vail the best offers on mobiles, laptops, apparels, home appliances, furniture, electronics and many more with Axis Bank. Choose your favourite brands and get the best deals on them. Offers are available across banking channels. </p>
+                            <p><b>B</b>ank via Internet Banking, Mobile Banking, Credit Card or Debit Card, and get lucky with your transactions. Axis eDGE Rewards, our bank-wide loyalty program, also offer some incredible deals. So go ahead and get rewarding returns on shopping and other banking transactions.</p>
+                          </div>
+                        </div>
+                    </div>
+                        </div><p></p>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                <p><b>A</b>xis Bank has partnered with leading insurers to provide you with different Insurance solutions, which offer assured compensation of financial expenses / losses during medical and non-medical emergencies. </p>
+                                <p><b>A</b>vail any Insurance policy Life Insurance,Non-Life Insurance and other government introduced Insurance policies. Get the Insurance policy of your choice by exploring the wide range of Insurance products below.</p>
+                              </div>
+                            </div>
+                        </div>
+                        </div><p></p>
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                <p><b>A</b>t Axis Bank, we believe your journey should continue without any speed bumps. This is why we bring you customized bank loans at competitive interest rates. </p>
+                                <p><b>T</b>o get started, check your loan eligibility using our simple loan calculators. You can submit your loan application online in three easy steps and avail the most attractive interest rates and comfortable repayment tenures.</p>
+                                <p><b>A</b>ttractive interest rates to make your Home Loans affordable and easier on your pocket.
+                                    Customized repayment options to suit your needs.No hidden charges.Expert legal and technical counseling to help you make the right home buying decision.</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                <p></p>
+          
+          
+                    <!--------------- Modal ----------------->
+
+
+                    <div class="container">
+                            
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style-position="fixed">Know more</button>
+                      
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">About AXIS</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>A</b>xis Bank is the third-largest of the private-sector banks in India offering a comprehensive suite of financial products. The bank has its head office in Mumbai, Maharashtra. It has 4050 branches, 11,801 ATMs and 4,917 cash recyclers spread across the country as on 31 March 2019 and nine international offices. The bank employs over 55,000 people and had a market capitalization of ₹1.31 trillion (US$19 billion) (as on 31 March 2018). It sells financial services to large and mid-size corporates, SME and retail businesses.
+        
+                                        As of 30 June 2016, 30.81% shares are owned by promoters and promoter group (United India Insurance Company Limited, Oriental Insurance Company Limited, National Insurance Company Limited, New India Assurance Company Ltd, GIC, LIC and UTI).The remaining 69.19% shares are owned by mutual funds, FIIs, banks, insurance companies, corporate bodies and individual investors among others.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      
+                    
+              
+       
+    <!--/.footer-->
+    <div class="footer"> 
+       Copyright © 2019 Axis Bank
+      <a href="#" class="fa fa-facebook" ></a>
+      <a href="#" class="fa fa-twitter"></a>
+  
+      <a href="#" class="fa fa-linkedin"></a>
+  
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+      
+  </body>
+  </html>
